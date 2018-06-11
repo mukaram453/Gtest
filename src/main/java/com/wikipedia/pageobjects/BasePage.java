@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
 	
-	public WebDriver driver;
-	public static final String BASE_URL = "https://en.wikipedia.org";  
+	public static final String BASE_URL = "https://en.wikipedia.org";
+	public WebDriver driver;	  
 	protected Actions action;
    
 
