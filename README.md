@@ -4,7 +4,7 @@ mvn test -Dbrowser=chrome
 
 possible options chrome and firefox
 
-I have used webdrivermanager for browser's system dependent webdriver like chromedriver and geckodriver
+I have used webdrivermanager for browser's system dependent webdrivers like chromedriver and geckodriver
 
 webdrivermanager advantages:
   1.  It checks the latest version of the WebDriver binary file
