@@ -37,6 +37,11 @@ public abstract class BasePage {
 		WebDriverWait wait = new WebDriverWait(driver, timeOut);
 		return wait.until(ExpectedConditions.elementToBeClickable(by));
 	}
+	
+	public WebElement waitUntil(WebElement element, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		return wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
 
 	public void goToPageEnd() {
 		action.sendKeys(Keys.END).click().perform();

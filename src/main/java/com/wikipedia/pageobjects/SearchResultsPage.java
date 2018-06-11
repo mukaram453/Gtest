@@ -21,7 +21,6 @@ public class SearchResultsPage extends BasePage {
 	}
 
 	public void clickThridLink() {
-		thirdLink.click();
+		waitUntil(thirdLink, 4).click();	
 	}
-
 }
