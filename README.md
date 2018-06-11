@@ -1,3 +1,5 @@
+I have used page objects pattern (POM) with Page Fatory 
+
 Run the following command from command prompt
 
 mvn test -Dbrowser=chrome
