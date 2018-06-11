@@ -8,21 +8,19 @@ import com.wikipedia.pageobjects.BasePage;
 import com.wikipedia.pageobjects.SearchPage;
 import com.wikipedia.pageobjects.SearchResultsPage;
 
+public class WikipediaTest extends BaseTest {
 
-public class WikipediaTest extends BaseTest{
-	
 	SearchPage searchPage;
 	SearchResultsPage searchResultsPage;
-	
+
 	public WikipediaTest() {
 		searchPage = new SearchPage(driver);
 		searchResultsPage = new SearchResultsPage(driver);
 	}
-	
-		
+
 	@Test
 	public void test() {
-		
+
 		searchResultsPage = searchPage.enterSearch("OOP");
 		String actualUrl = searchPage.urlEqualsTo(searchPage.getCurrentUrl(), 4);
 		String expectedUrl = BasePage.BASE_URL + "/wiki/OOP";
@@ -34,10 +32,10 @@ public class WikipediaTest extends BaseTest{
 		searchResultsPage.goToPageEnd();
 		searchResultsPage.clickThridLink();
 	}
-	
+
 	@AfterClass
-    public static void setUp() {
-    	closeBroser();     
-    }
+	public static void setUp() {
+		closeBroser();
+	}
 
 }
