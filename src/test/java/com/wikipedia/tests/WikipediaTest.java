@@ -30,10 +30,7 @@ public class WikipediaTest extends BaseTest {
 		expectedUrl = BasePage.BASE_URL + "/wiki/Object-oriented_programming";
 		Assert.assertEquals("", expectedUrl, actualUrl);
 		searchResultsPage.goToPageEnd();
-		searchResultsPage.clickThridLink();
-		
-		
-		
+		searchResultsPage.clickThridLink();		
 	}
 
 	@AfterClass
