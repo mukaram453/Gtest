@@ -31,6 +31,9 @@ public class WikipediaTest extends BaseTest {
 		Assert.assertEquals("", expectedUrl, actualUrl);
 		searchResultsPage.goToPageEnd();
 		searchResultsPage.clickThridLink();
+		
+		
+		
 	}
 
 	@AfterClass
